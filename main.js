@@ -48,6 +48,8 @@ function atualizaCronometro() {
   document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
 
   for (let i = 0; i < contadores.length; i++) { 
+    document.getElementById ("seg"+i). textContent= calculaTempo(tempos[i])[3];
+    consolo.log("seg"+i);
   }
 }
 
